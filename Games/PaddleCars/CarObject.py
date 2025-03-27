@@ -7,8 +7,8 @@ class car(object):
         # init game object
         self.bias = 100 # 真实绘制地图大于实际展示部分，需要适当便宜绘制位点
         self.x = 250
-        self.car = cv2.resize(cv2.imread('./Source/BlueCar.png'),(50, 100))
-        self.enemy = cv2.resize(cv2.imread('./Source/RedCar.png'),(50, 100))
+        self.car = cv2.resize(cv2.imread(r'C:\Users\deep\gitcode\PaddleGames\Games\PaddleCars\Source\BlueCar.png'),(50, 100))
+        self.enemy = cv2.resize(cv2.imread(r'C:\Users\deep\gitcode\PaddleGames\Games\PaddleCars\Source\RedCar.png'),(50, 100))
         self.barrier_list = []
         self.is_collision = 0 # 撞车标识 0 正常 1 撞车
 

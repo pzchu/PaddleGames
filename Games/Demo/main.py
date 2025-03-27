@@ -65,9 +65,9 @@ class Window(QWidget):
         self.camera.open(self.camera_id)
 
     def initModel(self):
-        self.model = fastdeploy.vision.keypointdetection.PPTinyPose('../../Models/PP_TinyPose_128x96_infer/model.pdmodel',
-                                                                    '../../Models/PP_TinyPose_128x96_infer/model.pdiparams',
-                                                                    '../../Models/PP_TinyPose_128x96_infer/infer_cfg.yml')
+        self.model = fastdeploy.vision.keypointdetection.PPTinyPose(r'C:\Users\deep\gitcode\PaddleGames\Models\PP_TinyPose_128x96_infer\model.pdmodel',
+                                                                    r'C:\Users\deep\gitcode\PaddleGames\Models\PP_TinyPose_128x96_infer\model.pdiparams',
+                                                                    r'Models/PP_TinyPose_128x96_infer/infer_cfg.yml')
 
     def inferModel(self):
         # read pic from camera

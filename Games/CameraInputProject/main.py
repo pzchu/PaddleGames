@@ -67,9 +67,9 @@ class Window(QWidget):
         self.flush_clock.timeout.connect(self.update_frame)  # 若定时器结束，show_frame()
 
     def initModel(self):
-        self.model = fastdeploy.vision.keypointdetection.PPTinyPose('../../Models/PP_TinyPose_128x96_infer/model.pdmodel',
-                                                                    '../../Models/PP_TinyPose_128x96_infer/model.pdiparams',
-                                                                    '../../Models/PP_TinyPose_128x96_infer/infer_cfg.yml')
+       self.model = fastdeploy.vision.keypointdetection.PPTinyPose(r'C:\Users\deep\gitcode\PaddleGames\Models\PP_TinyPose_128x96_infer\model.pdmodel',
+                                                                    r'C:\Users\deep\gitcode\PaddleGames\Models\PP_TinyPose_128x96_infer\model.pdiparams',
+                                                                    r'Models/PP_TinyPose_128x96_infer/infer_cfg.yml')
     def initCamera(self):
         # 开启视频通道
         self.camera_id = 0 # 为0时表示视频流来自摄像头
